@@ -24,7 +24,11 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
   let cartItems = `In your cart, you have `;
-  
+  for(var i = 0; i < cart.length(); i++){
+    if(i === cart.length()){
+      cartItems += `${cart[i].itemName} at 
+    }
+  }
 }
 
 function total() {
