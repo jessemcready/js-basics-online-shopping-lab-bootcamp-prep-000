@@ -40,6 +40,11 @@ function viewCart() {
 
 function total() {
   // write your code here
+  let sum = 0;
+  cart.forEach(function(item){
+    sum += item.itemPrice;
+  });
+  return sum;
 }
 
 function removeFromCart(item) {
