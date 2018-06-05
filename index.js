@@ -20,12 +20,12 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if (cart.length() === 0){
+  if (cart.length === 0){
     return "Your shopping cart is empty.";
   }
   let cartItems = `In your cart, you have `;
-  for(var i = 0; i < cart.length(); i++){
-    if(i === cart.length()){
+  for(var i = 0; i < cart.length; i++){
+    if(i === cart.length){
       cartItems += `${cart[i].itemName} at $${cart[i].itemPrice}.`
     } else{
       `${cart[i].itemName} at $${cart[i].itemPrice}, `
