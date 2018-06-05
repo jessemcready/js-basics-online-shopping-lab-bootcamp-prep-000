@@ -13,7 +13,7 @@ function addToCart(item) {
  // write your code here
  cart.push({
    itemName: item,
-   itemPrice: 
+   itemPrice: Math.floor()
  })
 }
 
